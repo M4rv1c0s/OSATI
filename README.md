@@ -1,2 +1,0 @@
-# OSATI
-Pagina empresarial
