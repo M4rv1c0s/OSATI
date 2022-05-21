@@ -156,6 +156,45 @@ nav .enlaces a:hover{
 .textos>h2{font-size: 30px; font-weight: 300;}
 /*main*/
 .contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow:hidden;
+    padding:52px 0;
+}
+.sobre-nosotros{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.slogan{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.parrafo{
+    margin-bottom: 13px;
+    font-weight:300;
+    text-align:justify;
+    line-height:24px;
+    color: rgb(24,16,16);
+}
+.acerca-de .boton{
+    display:inline-block;
+    padding:6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color:#000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+.contenedor{
     margin:auto;
     padding: var(--margenes) 0;
     width: 90%;
@@ -213,15 +252,17 @@ nav .enlaces a:hover{
     height: auto;
 }
 .servicios{
+    
     display: flex;
     color: #fff;
     justify-content: space-between;
     margin:auto;
     flex-wrap: wrap;
+     
 }
 
 .caja-servicios>h4{
-    margin-bottom: var(--espacios);
+    margin-bottom: var(--espacios);  
 }
 .caja-servicios>p{
     text-align: center;
