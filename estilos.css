@@ -155,13 +155,68 @@ nav .enlaces a:hover{
 .textos>h1{font-size:80px;}
 .textos>h2{font-size: 30px; font-weight: 300;}
 /*main*/
-.contenedor{
+
+/*inicio footer*/
+.contenedor-fo{
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow:hidden;
     padding:52px 0;
 }
+.titulo-footer, .subtitulo-footer{
+    color:#fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+}
+.subtitulo-footer{
+    font-size:16px;
+    margin-bottom:64px; /*font-weigth:400;*/
+}
+footer{
+    background:#2c3e50;
+    height:auto;
+}
+
+input[type="text"], input[type="email"]{
+    display:inline-block;
+    width: 48%;
+    padding: 13px;
+    border:none;
+    color:#fff;
+    font-family:'open sans';
+    background: rgba(37,37,33,.7);
+    margin-bottom: 16px;
+    border-top: 1px solid rgba(37,37,33,.7);
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+   
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    
+}
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37,37,33,.7);
+    padding: 13px;
+    border:none;
+    color:#fff;
+    font-family:'open sans';
+    margin-bottom: 16px;
+}
+input[type="submit"]{
+    display: inline-block;
+    padding: 13px;
+    border:none;
+    color:#fff;
+    background: rgba(37,37,33,.7);
+    width: 96px;
+} /* fin footer*/
 .sobre-nosotros{
     text-align: center;
     font-size: 56px;
@@ -181,7 +236,7 @@ nav .enlaces a:hover{
     line-height:24px;
     color: rgb(24,16,16);
 }
-.acerca-de .boton{
+/*.acerca-de .boton{
     display:inline-block;
     padding:6px;
     width: 128px;
@@ -193,7 +248,7 @@ nav .enlaces a:hover{
     text-decoration: none;
     border-radius: 16px;
     margin-top: 24px;
-}
+}*/
 .contenedor{
     margin:auto;
     padding: var(--margenes) 0;
@@ -255,10 +310,10 @@ nav .enlaces a:hover{
     
     display: flex;
     color: #fff;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:auto;
-    flex-wrap: wrap;
-     
+    flex-wrap:wrap;
+    width:95%;   
 }
 
 .caja-servicios>h4{
@@ -330,7 +385,7 @@ nav .enlaces a:hover{
 
 /*footer*/
 
-footer{background:url(img/teclado.jpg);}
+/*footer{background:url(img/teclado.jpg);}*/
 
 .marca-logo{
     width: 40%;
@@ -357,9 +412,9 @@ footer{background:url(img/teclado.jpg);}
 
 }
 
-footer p{
+/*footer p{
     margin-top: var(--espacios);
-}
+}*/
 
 @media screen and (max-width: 700px){
     .nav2{
@@ -368,6 +423,11 @@ footer p{
     .icono{
         display:block;
         cursor:pointer;
+        
+    }
+    .caja-servicios{
+        width:45%;
+        margin-bottom: var(--margenes);
     }
     .enlaces{
         position: fixed;
@@ -388,6 +448,7 @@ footer p{
         background:#34495e;
         color:#fff;
     }
+  
     .textos>h1{ font-size: 70px;}
     .textos>h2{font-size:35px;}
     .content-card{
