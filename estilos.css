@@ -256,7 +256,9 @@ input[type="submit"]{
     max-width: 1000px;
     text-align: center;
     overflow: hidden;
+   
 }
+
 .contenedor h3{
     font-size: var(--titulos);
     color: var(--color1);
@@ -361,17 +363,20 @@ input[type="submit"]{
     height:300px;
     overflow: hidden;
     margin-bottom: var(--espacios-contenidos);
+    background:rgba(20, 4, 4, 0.788);
 }
 
 .img-work{
     height: 60%;
     width: 100%;
+  
 }
 
 .img-work img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+   
 }
 
 .textos-work{
@@ -381,6 +386,7 @@ input[type="submit"]{
 .textos-work h4{
     line-height: 30px;
     font-weight: 300;
+    color:#fff;
 }
 
 /*footer*/
