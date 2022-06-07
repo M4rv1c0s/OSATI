@@ -23,17 +23,17 @@ $(function () {
         }
     });
 
-    let equipo = $('#equipo').offset().top,
-        nosotros = $('#nosotros').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
+    /*let equipo = $('#equipo').offset().top,
+    let nosotros = $('#nosotros').offset().top,
+        servicio = $('#servicio').offset().top,*/
+    let trabajo = $('#trabajo').offset().top,
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
-        let equipo = $('#enlace-equipo').offset().top,
-        nosotros = $('#nosotros').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
+        /*let equipo = $('#enlace-equipo').offset().top,
+        let nosotros = $('#nosotros').offset().top,
+        servicio = $('#servicio').offset().top,*/
+    let  trabajo = $('#trabajo').offset().top,
         contacto = $('#contacto').offset().top;
     });
 
@@ -43,6 +43,7 @@ $(function () {
             scrollTop: 0
         },600);
     });
+    
     $('#enlace-nosotros').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
@@ -50,12 +51,12 @@ $(function () {
         },600);
     });
 
-    $('#enlace-equipo').on('click', function(e){
+    /*$('#enlace-equipo').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
             scrollTop: equipo -100
         },600);
-    });
+    });*/
 
     $('#enlace-servicio').on('click', function(e){
         e.preventDefault();
